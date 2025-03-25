@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz - Luxury and Innovation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const infoButton = document.getElementById("infoButton");
+            const moreInfo = document.getElementById("moreInfo");
+
+            if (infoButton && moreInfo) {
+                infoButton.addEventListener("click", function () {
+                    if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
+                        moreInfo.style.display = "block";
+                    } else {
+                        moreInfo.style.display = "none";
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+   <header>
+        <h1 class="title">Mercedes-Benz</h1>
+        <p class="subtitle">The Best or Nothing</p>
+    </header>
+   
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#models">Models</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="tab">
+        <button class="tablinks" onclick="window.location.href='https://www.mercedes-benz.ie/'">Site</button>
+        <button class="tablinks" onclick="window.location.href='https://www.mercedes-benz.ie/locate-us/'">Dealership</button>
+        <button class="tablinks" onclick="window.location.href='https://group.mercedes-benz.com/company/'">Company</button>
+        <button class="tablinks" onclick="window.location.href='stats.html'">Stats</button>
+        <button class="tablinks" onclick="window.location.href='history.html'">History & Legacy</button>
+    </div>
+
+    <section id="about">
+        <h2>About Mercedes-Benz</h2>
+        <p>Mercedes-Benz is a symbol of luxury, performance, and cutting-edge technology. From sleek sedans to high-performance AMG models, Mercedes continues to push automotive excellence.</p>
+        <img src="https://wallpapercave.com/wp/wp7629027.jpg" alt="Mercedes Car" class="car-image">
+    </section>
+
+    <section id="models">
+        <h2>Our Models</h2>
+        <ul>
+            <li><p>A rugged yet luxurious SUV, the G-Wagon blends off-road power with high-end comfort, making it an icon on both city streets and rough terrain.</p>
+                <a href="https://www.youtube.com/watch?v=R3neG59lFCM" target="_blank">Mercedes-Benz G-Wagon</a></li>
+            <li><p>The ultimate symbol of luxury, the Maybach offers unmatched comfort, cutting-edge tech, and a first-class driving experience.</p>
+                <a href="https://www.youtube.com/watch?v=K1N-3NkFmkk" target="_blank">Mercedes-Benz Maybach</a></li>
+            <li><p>A high-performance beast, the AMG GT 63 combines breathtaking speed, aggressive styling, and track-ready engineering.</p>
+                <a href="https://www.youtube.com/watch?v=JO9tmwdNtas&t=2s" target="_blank">Mercedes-Benz AMG GT 63</a></li>
+            <li><p>The pinnacle of luxury sedans, the S-Class offers cutting-edge technology, unparalleled comfort, and a smooth, refined driving experience.</p>
+                <a href="https://www.youtube.com/watch?v=X23itRZqkwk" target="_blank">Mercedes-Benz S-Class</a></li>
+        </ul>
+    </section>
+
+    <section id="multimedia">
+        <h2>Experience the Power</h2>
+        <iframe width="600" height="340" 
+            src="https://www.youtube.com/embed/DgqguSG9ZB4" 
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section class="contact">
+        <h2>Want to Learn More?</h2>
+        <button id="infoButton">Click for More Info</button>
+        <div id="moreInfo" style="display: none;">
+            <p>Mercedes-Benz is known for innovation, safety, and luxury. The company pioneered many modern technologies in the automotive industry, including the first production car with ABS, airbags, and autonomous driving features.</p>
+            <ul>
+                <li>Founded: 1926</li>
+                <li>Headquarters: Stuttgart, Germany</li>
+                <li>Popular Models: S-Class, G-Wagon, AMG Series</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@mercedes.com</p>
+        <p>Phone: +123 456 789</p>
+    </section>
+
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2025 Mercedes-Benz. All rights reserved.</p>
+    </footer>
+</body>
+</html>
